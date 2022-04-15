@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/eTspeed"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eTtime"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTspeed" />
+
+    <TextView
+        android:id="@+id/settime"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:text="時間"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/eTtime"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setspeed" />
+
+    <TextView
+        android:id="@+id/setspeed"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="44dp"
+        android:text="速度"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/eTspeed"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/setstepsize"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="步/10公尺"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitsetting"
+        app:layout_constraintEnd_toStartOf="@+id/eTstepnumber"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settime"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <EditText
+        android:id="@+id/eTstepnumber"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitsetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTtime"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lastset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前次設定資料"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setstepsize"
+        app:layout_constraintVertical_bias="0.224" />
+
+    <TextView
+        android:id="@+id/lastspeed"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="21dp"
+        android:text="速度"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastset"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/lasttime"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:text="時間"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastspeed" />
+
+    <TextView
+        android:id="@+id/laststepnumber"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:text="步次"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lasttime" />
+
+    <TextView
+        android:id="@+id/laststepsize"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="31dp"
+        android:text="步伐"
+        app:layout_constraintBottom_toTopOf="@+id/completesetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laststepnumber" />
+
+    <TextView
+        android:id="@+id/speedunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="公尺／秒"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toEndOf="@+id/lastspeed"
+        app:layout_constraintTop_toBottomOf="@+id/lastset" />
+
+    <TextView
+        android:id="@+id/timeunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="分鐘"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toEndOf="@+id/lasttime"
+        app:layout_constraintTop_toBottomOf="@+id/speedunit" />
+
+    <TextView
+        android:id="@+id/stepnumunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="步／10公尺"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toEndOf="@+id/laststepnumber"
+        app:layout_constraintTop_toBottomOf="@+id/timeunit" />
+
+    <TextView
+        android:id="@+id/stepsizeunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="公分"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toEndOf="@+id/laststepsize"
+        app:layout_constraintTop_toBottomOf="@+id/stepnumunit"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/submitsetting"
+        android:layout_width="71dp"
+        android:layout_height="38dp"
+        android:onClick="subsetting"
+        android:text="確認"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <TextView
+        android:id="@+id/lastspeedshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Speed"
+        app:layout_constraintEnd_toStartOf="@+id/speedunit"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toEndOf="@+id/lastspeed"
+        app:layout_constraintTop_toBottomOf="@+id/lastset" />
+
+    <TextView
+        android:id="@+id/lasttimeshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="time"
+        app:layout_constraintEnd_toStartOf="@+id/timeunit"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/lasttime"
+        app:layout_constraintTop_toBottomOf="@+id/lastspeedshow" />
+
+    <TextView
+        android:id="@+id/laststepnumbershow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="number"
+        app:layout_constraintEnd_toStartOf="@+id/stepnumunit"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toEndOf="@+id/laststepnumber"
+        app:layout_constraintTop_toBottomOf="@+id/lasttimeshow" />
+
+    <TextView
+        android:id="@+id/laststepsizeshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="60"
+        app:layout_constraintEnd_toStartOf="@+id/stepsizeunit"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/laststepsize"
+        app:layout_constraintTop_toBottomOf="@+id/laststepnumbershow" />
+
+    <Button
+        android:id="@+id/completesetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:onClick="completesetting"
+        android:text="完成"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laststepsizeshow"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lasttimedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/speedunit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/lastset"
+        app:layout_constraintTop_toBottomOf="@+id/submitsetting"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <ImageView
+        android:id="@+id/backset"
+        android:layout_width="380dp"
+        android:layout_height="283dp"
+        app:layout_constraintBottom_toTopOf="@+id/completesetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitsetting"
+        app:srcCompat="@drawable/orange" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:text="模式"
+        android:onClick="Mode"
+        app:layout_constraintBottom_toTopOf="@+id/eTspeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

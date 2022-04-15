@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/cat"
+        android:layout_width="180dp"
+        android:layout_height="77dp"
+        android:text="COPD評估問卷(CAT)"
+        android:onClick="CAT"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/life"
+        android:layout_width="180dp"
+        android:layout_height="77dp"
+        android:text="生活品質問卷(Lifestyle)"
+        android:onClick="Lifestyle"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Button
+        android:id="@+id/mmrc"
+        android:layout_width="180dp"
+        android:layout_height="77dp"
+        android:text="mMRC"
+        android:onClick="mmrc"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/cloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上傳問卷結果"
+        android:onClick="cloud"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="440dp" />
+</LinearLayout>

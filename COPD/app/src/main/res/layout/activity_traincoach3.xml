@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="83dp"
+        android:layout_height="82dp"
+        android:background="@drawable/bg_round_button"
+        android:scaleType="fitCenter"
+        android:onClick="onStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.677"
+        app:srcCompat="@drawable/play" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="88dp"
+        android:layout_height="87dp"
+        android:background="@drawable/bg_round_button"
+        android:onClick="onPause"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681"
+        app:srcCompat="@drawable/stop_button" />
+
+    <TextView
+        android:id="@+id/remainingtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩餘時間"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <Button
+        android:id="@+id/btnAlphacode"
+        android:layout_width="357dp"
+        android:layout_height="139dp"
+        android:background="#4D599C"
+        app:layout_constraintBottom_toTopOf="@+id/remainingtime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/sendtrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:onClick="sendtrain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/cdtimer"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:layout_marginTop="43dp"-->
+    <!--        android:textSize="25dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/imageButton4"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/remainingtime"-->
+    <!--        app:layout_constraintVertical_bias="0.256" />-->
+
+    <Button
+        android:id="@+id/butimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remainingtime"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/tcsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="tcsetting"
+        android:text="設定"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <TextView
+        android:id="@+id/timerange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="階段一"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/remainingtime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlphacode"
+        app:layout_constraintVertical_bias="0.872" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/borgchinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="自覺呼吸困難量表"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/borgeng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Borg Scale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borgchinese" />
+
+    <RadioGroup
+        android:id="@+id/Borgscalegroup"
+        android:layout_width="279dp"
+        android:layout_height="349dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borgeng">
+
+        <RadioButton
+            android:id="@+id/borg0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 " />
+
+        <RadioButton
+            android:id="@+id/borg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1  非常輕微" />
+
+        <RadioButton
+            android:id="@+id/borg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2  輕微（交談順暢）" />
+
+        <RadioButton
+            android:id="@+id/borg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3  中度" />
+
+        <RadioButton
+            android:id="@+id/borg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4  有點吃力（交談會中斷）" />
+
+        <RadioButton
+            android:id="@+id/borg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5  吃力" />
+
+        <RadioButton
+            android:id="@+id/borg6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <RadioButton
+            android:id="@+id/borg7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7  非常吃力（不想說話）" />
+
+        <RadioButton
+            android:id="@+id/borg8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8" />
+
+        <RadioButton
+            android:id="@+id/borg9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9  非常非常吃力" />
+
+        <RadioButton
+            android:id="@+id/borg10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10  幾乎達到極限" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/sendborg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="提交"
+        android:onClick="sendborg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Borgscalegroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>

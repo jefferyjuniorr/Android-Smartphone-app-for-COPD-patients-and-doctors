@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.copd_app" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".QuestionnarieActivity" >
+        </activity>
+        <activity android:name=".CATquestionnaire" >
+        </activity>
+        <activity android:name=".Lifestylequestionnaire" >
+        </activity>
+        <activity android:name=".Mmrcquestionnaire" >
+        </activity>
+        <activity android:name=".BodydataActivity" >
+        </activity>
+        <activity android:name=".Traincoachmenu" >
+        </activity>
+        <activity android:name=".Traincoach" >
+        </activity>
+        <activity android:name=".Traincoachhello" >
+        </activity>
+        <activity android:name=".Borgscale" >
+        </activity>
+        <activity android:name=".Borgscalefinal" >
+        </activity>
+        <activity android:name=".Traincoach2" >
+        </activity>
+        <activity android:name=".Traincoach3" >
+        </activity>
+        <activity android:name=".Traincoachsettingcon" >
+        </activity>
+        <activity android:name=".Traincoachsettingvar" >
+        </activity>
+        <activity android:name=".NMGconnect" >
+        </activity>
+        <activity android:name=".Register" >
+        </activity>
+        <activity android:name=".Sync" >
+        </activity>
+        <activity android:name=".Traincoachconmode" >
+        </activity>
+        <activity android:name=".Traincoachvarmode" >
+        </activity>
+    </application>
+
+</manifest>
