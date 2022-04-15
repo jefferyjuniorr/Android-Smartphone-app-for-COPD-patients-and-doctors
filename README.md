@@ -8,4 +8,4 @@ It's an android application for patients who have COPD to monitor their physiolo
 2. Remote pulmonary rehabilitation and health-monitoring system for doc.
 3. Physiological data dashboard
 4. Online prediction AECOPD
-5. Clinical questionnaires (CAT / Borg / Lifestyle / ) to fiil out for doctors to know patients well and for prediction model training.
+5. Clinical questionnaires (CAT / Borg / Lifestyle / MMRC) to fiil out for doctors to know patients well and for prediction model training.
